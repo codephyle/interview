@@ -1,0 +1,61 @@
+
+1-	 can computer technology be integrated in an elevator system for a hundred story office building?
+
+2-	How do you optimize for availability? How would variation of traffic over a typical work week or floor or
+time of day affect this?
+
+3-	How would you redesign an ATM?
+
+4-	Suppose we wanted to run a microwave oven from the computer. What kind of software would you write
+to do this?
+
+5-	How would you design a coffee-machine for an automobile.
+
+6-	 Tradeoff between time spent in testing a product and getting into the market first.
+
+7-	 What to test for given that there isn't enough time to test everything you want to.
+
+8-	 Assuming that locks are the only reason due to which deadlocks can occur in a system. What would be a foolproof method of avoiding deadlocks in the system.
+
+9-	 Besides communication cost, what is the other source of inefficiency in RPC?
+(answer : context switches, excessive buffer copying).
+
+10-	How can you optimise the communication? (ans : communicate through shared memory on same machine, bypassing the kernel _ A Univ. of Wash. thesis)
+
+11-	 what are various problems unique to distributed databases
+
+12-	 Describe the file system layout in the UNIX OS
+a)  describe boot block, super block, inodes and data layout
+
+13	 In UNIX, are the files allocated contiguous blocks of data
+a)      no, they might be fragmented how is the fragmented data kept track of
+a)      describe the direct blocks and indirect blocks in UNIX file system
+
+14	. what is disk interleaving
+
+15	. why is disk interleaving adopted
+
+16	. given a new disk, how do you determine which interleaving is the best
+a)      give 1000 read operations with each kind of interleaving determine the best interleaving from the statistics
+
+17-	 draw the graph with performace on one axis and 'n' on another, where 'n' in the 'n' in n-way disk interleaving. (a tricky question, should be answered carefully)
+
+
+
+
+Databases
+=========
+
+18-	 You, a designer want to measure disk traffic i.e. get a histogram showing the relative frequency of I/O/second for each disk block. The buffer pool has b buffers and uses LRU replacement policy. The disk block size and buffer pool block sizes are the same. You are given a routine          int lru_block_in_position (int i) which returns the block_id of the block in the i-th position in the list of blocks managed by LRU.  Assume position 0 is the hottest.
+You can repeatedly call this routine.  How would you get the histogram you desire?
+
+Databases ans..
+=========
+
+1. Simply do       histogram [lru_block_in_position (b-1)] ++ at frequent intervals...  The sampling frequency should be close to the disk I/O rate. It can be adjusted by remembering the last block seen in position b. If same, decrease frequency;
+if different, increase, with exponential decay etc. And of course, take care of overflows in the histogram.
+
+
+1. Implement a multiple-reader-single-writer lock given a compare-and-swap instruction. Readers cannot overtake
+waiting writers.
+

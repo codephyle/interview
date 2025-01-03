@@ -1,0 +1,19 @@
+Hard links
+ - different directory entry pointing the same inode
+ - only within file system. why?
+ - link count maintained in inode
+
+Soft links
+ - links are represented as files with the path
+ - different inodes
+ - symbolic link can be broken. meaning the target file can be deleted without symbolic link update
+ - across file systems. 
+
+
+File types
+ Block device files
+ character device files 
+ Named pipes
+ sockets
+
+

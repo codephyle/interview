@@ -1,0 +1,15 @@
+Tables -> Chains -> Rules
+
+Table Order - raw, mangle, nat, filter
+Chains and Rules - sequential top to bottom.
+
+Chains: 
+    PREROUTING
+    INPUT
+    FORWARD
+    OUTPUT
+    POSTROUTING
+
+User defined chains
+
+First Match Wins: Once a packet matches a rule, its target action (ACCEPT, DROP, etc.) is executed, and no further rules in that chain are processed for that packet.

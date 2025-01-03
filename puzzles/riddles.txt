@@ -1,0 +1,88 @@
+Riddles
+
+1-	Why is a manhole cover round?
+
+2-	How many cars are there in the USA?
+
+3-	You've got someone working for you for seven days and a gold bar to pay them. The gold bar is
+segmented into seven connected pieces. You must give them a piece of gold at the end of every day. If you
+are only allowed to make two breaks in the gold bar, how do you pay your worker?
+
+4-	One train leaves Los Angeles at 15mph heading for New York. Another train leaves from New York at
+20mph heading for Los Angeles on the same track. If a bird, flying at 25mph, leaves from Los Angeles at
+the same time as the train and flies back and forth between the two trains until they collide, how far will the
+bird have traveled?
+
+5-	You have two jars, 50 red marbles and 50 blue marbles. A jar will be picked at random, and then a
+marble will be picked from the jar. Placing all of the marbles in the jars, how can you maximize the chances
+of a red marble being picked? What are the exact odds of getting a red marble using your scheme?
+
+6-	Imagine you are standing in front of a mirror, facing it. Raise your left hand. Raise your right hand. Look at
+your reflection. When you raise your left hand your reflection raises what appears to be his right hand. But
+when you tilt your head up, your reflection does too, and does not appear to tilt his/her head down. Why is
+it that the mirror appears to reverse left and right, but not up and down?
+
+7-	You have 4 jars of pills. Each pill is a certain weight, except for contaminated pills contained in one jar,
+where each pill is weight + 1. How could you tell which jar had the contaminated pills in just one
+measurement?
+
+8-	If you had an infinite supply of water and a 5 quart and 3 quart pail, how would you measure exactly 4
+quarts?
+
+9-	You have a bucket of jelly beans. Some are red, some are blue, and some green. With your eyes closed,
+pick out 2 of a like color. How many do you have to grab to be sure you have 2 of the same?
+
+10-	Which way should the key turn in a car door to unlock it?
+
+11-	If you could remove any of the 50 states, which state would it be and why?
+
+12-	You have 5 jars of pills. Each pill weighs 10 gram, except for contaminated pills contained in one
+jar, where each pill weighs 9 gm. Given a scale, how could you tell which jar had the contaminated pills in just one measurement?
+
+13-	One train leaves Los Angeles at 15 MPH heading for New York. Another train leaves from New York at 20mph heading for Los Angeles on the same track. If a bird, flying at 25mph, leaves from Los Angeles at the same time as the train and flies back and forth between the two trains until they collide, how far will the bird have traveled?
+
+
+
+
+14-	Imagine that you have 26 constants, labelled A through Z. Each constant is assigned a value in the following way: 
+A = 1; the rest of the values equal their position in the alphabet (B corresponds to the second position so it equals 2, C = 3, etc.) raised to the power of the preceeding constant value. 
+So, B = 2 ^ (A's value), or B = 2^1 = 2. C = 3^2 = 9. D = 4^9,
+etc., etc. Find the exact numerical value to the following equation:
+
+(X - A) * (X - B) * (X - C) * ... * (X - Y) * (X - Z)
+
+15-	. Given a rectangular (cuboidal for the puritans) cake with a rectangular piece removed (any size or orientation), how would you cut the remainder of the cake into two equal halves with one straight cut of a knife ?
+
+16-	. How many points are there on the globe where by walking one mile south, one mile east and one mile north you reach the place where you started.
+
+17-	 A version of the "There are three persons X Y Z, one of which always lies".. etc..
+
+18-	 There are 3 ants at 3 corners of a triangle, they randomly start moving towards another corner.. what is the probability that they don't collide. 
+
+19-	 If you are on a boat and you throw out a suitcase, Will the level of water increase 
+
+20-	Given a rectangular (cuboidal for the puritans) cake with a rectangular piece removed (any size or orientation), how would you cut the remainder of the cake into two equal halves with one straight cut of a knife?
+
+21-	How are M&Ms made? 
+
+22- 	If you had to learn a new computer language, how would you go about doing it? 
+
+23-	 If MS told you we were willing to invest $5 million in a start up of your choice, what business would you
+ start? Why? 
+
+24-	 If you could gather all of the computer manufacturers in the world together into one room and then tell
+ them one thing that they would be compelled to do, what would it be? 
+
+25-	 Explain a scenario for testing a salt shaker. 
+
+26-	 If you are going to receive an award in 5 years, what is it for and who is the audience? 
+
+27-	 How would you explain how to use Microsoft Excel to your grandma? 
+
+28-	 Why is it that when you turn on the hot water in any hotel, for example, the hot water comes pouring out
+ almost instantaneously? 
+
+29. Given ships travel between points A and B, one every hour leaving from  both ends (simultaneously), how many ships are required (minimum), if the  journey takes 1hr 40 mts. How many ships does each ship encounter in its  journey, and at what times? 
+ Ans 4, 3 at 20 mts, 50 mts and 80 mts. 
+
+

@@ -1,0 +1,990 @@
+   1.
+
+      Write an efficient C program to count the number of bits set in an 
+      unsigned integer.
+      i/p     o/p
+      ====    ===
+      0(00)    0
+      1(01)    1
+      2(10)    1
+      3(11)    2
+      .....  ...
+
+   2.
+
+      Write a small C program, which while compiling takes another program
+      from input terminal, and on running gives the result for the second
+      program. (NOTE: The key is, think UNIX).
+
+
+      Suppose, the program is 1.c
+      Then, while compiling
+      $ cc -o 1 1.c
+      int main()
+      {
+          printf("Hello World\n");
+      }
+      ^D
+      $ ./1
+      Hello World
+      $
+
+   3.
+
+      Given a string s1 and a string s2, write  a snippet to say whether s2 is a
+      rotation of s1 using only one call to strstr routine?
+
+      (eg given s1 = ABCD and s2 = CDAB, return  true,
+            given s1 = ABCD, and s2 = ACBD , return false)
+
+   4.
+
+      What's the  "condition" so that the following code
+      snippet  prints both HelloWorld !
+
+      if  "condition"
+      	printf ("Hello");
+      else
+      	printf("World");
+
+   5.
+
+      Ugly numbers are numbers whose only prime factors are 2, 3 or 5. The sequence 
+      1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, ... 
+      shows the first 11 ugly numbers. 
+      By convention, 1 is included. 
+
+      Write a program to find and print the 1500'th ugly number.
+
+   6.
+
+      Write a C program which when compiled and run, prints out a message
+      indicating whether the compiler that it is compiled with, allows /* */
+      comments to nest.
+
+   7.
+
+      Write a C function that will print 1 to N one per each line on the stdout
+      where N is a int parameter to the function. The function should not use 
+      while, for, do-while loops, goto statement, recursion, and switch
+      statement.
+
+   8.
+
+      int main()
+      {
+              int i, n = 20;
+              for (i = 0; i < n; i--)
+                      printf("*");
+      	return 0;
+      }
+
+      Change/add only one character and print '*' exactly 20 times.
+      (there are atleast 3 solutions to this problem :-)
+
+   9.
+
+      You are given have a datatype, say X in C.
+
+      The requirement is to get the size of the datatype, without declaring a
+      variable or a pointer variable of that type,
+
+      And, of course without using sizeof operator !
+
+  10.
+
+      Given a singly-linked, find out the mid point of a single linked list in a 
+      single parse of the list. Assume the program would be loaded in read-only 
+      memory so no manipulation of the list is allowed.
+
+  11.
+
+      You are given a circular single linked list of sufficiently many number of
+      nodes(say more than 1 crore). You  need to delete a node say P and you are  
+      given a pointer to P in the circular single list. 
+
+      Suggest the most efficient methodology of deleting the node P from the 
+      circular single linked list without rounding about the circular single 
+      linked list.
+
+  12.
+
+      Write a C Program to reverse a stack "in place" using recursion ?
+      You can only use the following ADT functions on Stack:
+      IsEmpty
+      IsFull
+      Push
+      Pop
+      Top
+
+  13.
+
+      You are provided with two stacks, and pop() and push() functions for them.
+      You have to implement queue i.e. enqueue() and dequeue() using the
+      available operations.
+
+  14.
+
+      How do you reverse the words in a string?
+
+      "My name is Amit Agarwal"
+      to
+      "Agarwal Amit is name My"
+
+      A O(n) and 'in space' solution is appreciable.
+
+  15.
+
+      You are given a sequence of numbers from 1 to n-1 with one of the
+      numbers repeating only once. (example: 1 2 3 3 4 5).
+
+       * How can you find the  repeating number?
+       * What if i give you the constraint that you can't use a dynamic amount
+         of memory (i.e. the amount of memory you use can't be related to n)?
+       * What if there are two repeating numbers,instead of one (and the same
+         memory  constraint?)
+
+  16.
+
+      Given an array of numbers, except for one number all the others, occur
+      twice. Give an algorithm to find that number which occurs only once in the
+      array.
+
+  17.
+
+      There is a series of numbers in ascending order. All these numbers
+      have the same number of binary 1s in them. Given the number of 1 bits set in
+      the numbers, write an algorithm/C program to find the nth number in
+      the series.
+
+  18.
+
+      Given a stack S, write a C program to sort the stack (in the ascending
+      order).
+
+      We are not allowed to make any assumptions about how the stack is implemented. 
+      The only functions to be used are:
+      Push
+      Pop
+      Top
+      IsEmpty
+      IsFull
+
+  19.
+
+      Given a linked list, your are asked to find out the nth last element in
+      the linked-list. (n would be given as the argument to the function)
+
+  20.
+
+      The numbers are represented in linked-list with each node representing a
+      digit of the number as follows:
+      123  == 1 2 3 NULL
+      999  == 9 9 9 NULL
+
+      Write a C program to add two numbers.
+
+      I/P : 9 9 9 NULL
+            1 NULL
+
+      O/P : 1 0 0 0 NULL
+
+      You can assume that the number of elements in the linked-list is available
+      to you.
+      struct List
+      {
+       Node* head;
+       int noe; /* number of elements */
+      };
+
+  21.
+
+      There is a 100-story building and you are given two eggs.
+      The eggs (and the building) have an interesting property that
+      if you throw the egg from a floor number less than X, it will not
+      break. And it will always brake if the floor number is equal or greater than X.
+
+      Assuming that you can reuse the eggs  which didn't broke, you got to find
+      X in a minimal number of throws.
+
+      Give an algorithm to find X in minimal number of throws.
+
+  22.
+
+      You are given a singly link-list such that each node of this list is also a
+      head of another link list of the same type. So, how does one flatten the 
+      linked-list
+
+      struct node {
+      	void *data; /* could be anything */
+      	struct node *next;
+      	struct node *down;
+      };
+
+  23.
+
+      Given: 2 Unsorted single linked list
+
+      Todo: Fastest and optimised way to merge and make a single sorted list with
+      these 2 unsorted single linked list.
+
+  24.
+
+      Given a numbers x and n, where n is a power of 2, write C code, which
+      gives the multiple of n which is greater than or equal to x.
+      ex :
+      I/P: 13 8
+      O/P: 16
+
+      I/P: 17 16
+      O/P: 32
+
+      The challenge: Do not use division or modulo operator.
+
+  25.
+
+      In C, copying of array as follows is not possible:
+
+      int a[10],b[10];
+      a = b;
+      a = GetAnArrayOfTenElements();
+
+      Can you think of a simple hack, which would enable us to get this effect?
+
+  26.
+
+      Assume that two robots land from two different
+      flights with the help of parachuttes (at different
+      points) on an infinite plane.
+
+      Each robot leaves its parachutte on landing and goes in
+      search of the other robot. The problem is to write a
+      program which will be executed by both the robots for
+      rendevezvous(meeting).
+
+      You have the following instructions at your disposal
+      to write the program:
+      1) Step L - makes the robot take one step towards left
+      2) Step R - makes the robot take one step towards right
+      3) goto label - jump to the label
+      4) if P one instruction, where
+         P is a predicate which will be true when a robot senses a
+         parachutte. It will be true as long as the robot is near it.
+         The moment it takes a step towards left or right after sensing it,
+         then P will become false.
+
+      As part of 'if' statement one can execute one instruction which could be
+      (1) or (2) or (3)
+
+      Could anybody write a program to help the robots to
+      meet :)? Make your own assumptions and justify them.
+
+      Remember the same program needs to be executed by both robots :-)
+
+
+  27.
+
+      Given the values of two nodes in a *binary search tree*, write a c
+      program to find the lowest common ancestor. You may assume that both
+      values already exist in the tree.
+
+      The function prototype is as follows:
+      int FindLowestCommonAncestor(node* root,int value1,int value)
+
+                 20
+                /  \
+               8    22
+             /   \
+            4     12
+                 /  \
+               10    14
+
+      I/P : 4 and 14
+      O/P : 8
+
+      (Here the common ancestors of 4 and 14, are {8,20}.
+       Of {8,20}, the lowest one is 8).
+
+  28.
+
+      Given an array of 2n elements of which n elements are same and the
+      remaining n elements are all different. Write a C program to find out the
+      value which is present n times in the array.
+
+      There is no restriction on the elements in the array. They are random
+      (In particular they not sequential.)
+
+  29.
+
+      Given two arrays A and B. Array 'A' contains all the elements of 'B' but
+      one more element extra.....
+
+      Find out the extra element......
+
+      Restrictions: Dont use any relational ops ( > or > or == etc....), array
+      elements are not in order ...,
+
+
+  30.
+
+      There are 2 cities A and B, dist. between them is 1000 Km
+      we have 3000 bananas in city A and a elephant can carry max 1000 bananas at
+      any given time and it needs to eat a banana every 1 Km.
+
+      How Many Max. No. of bananas one can transfer to city B?
+
+      Note : the elephant cannot go without bananas to eat.
+
+  31.
+
+      Assume memory is divided into blocks that are a power of 2 in size,
+      starting at address 0. The blocks may be words, doublewords, pages, and so
+      on.
+
+      Then, given a starting address "A" and a length "L", we wish to  determine
+      whether or not the address range from "A" to "A+L-1" crosses a  block
+      boundary.
+
+      The quantities "A" and "L" are unsigned and any values that fit
+      in a register are possible.
+
+      Pictorially,
+
+      |---N------|----N-----|----N------|
+      +----------+----------+---- ... ---+----------+
+      |          |          |            |          |
+      +----------+----------+---- ... ---+----------+
+        ^ |----L---|
+        |
+        |
+        A
+
+      Write small piece of C code, to know if A+L crosses a boundary.
+
+      Challenge again is not to use division or modulo operator :-)
+
+
+  32.
+
+      Write an efficient function in C that deletes characters from a string.
+      Use the prototype:
+      void RemoveChars(char str[], char remove[]);
+      where any character existing in remove must be deleted from str.
+
+      For example, given a str of "Battle of the Vowels:Hawaii" and remove of
+      "aeiou", the function should transform str to "Bttl f th Vwls:Hw vs.
+      Brzny". 
+
+      Justify any design decisions you make and discuss the efficiency
+      of your solution.
+
+  33.
+
+      Write an algorithm to check whether a given unsigned number is a
+      multiple of 3, without using division and modulo operators.
+
+  34.
+
+      Prove that n*(n+1)*(2*n+1) is divisible by 6, for any n>0
+
+
+  35.
+
+      Given an 8x8 chessboard, 
+       * How many "total" number of squares are present in the board?
+       * How many "total" number of rectangles are preent in the board?
+        (for this problem assume that rectangles must have length and breadth 
+        different)
+
+  36.
+
+      I would like to know the method one employs to subtract
+      the following fractions
+
+      +8 5/12 - 2 2/3
+
+      Note: 8 5/12 is a mixed fraction. Cannot represent it any
+      better on the monitor
+
+      What I expect is a step wise description of the procedure.
+      No this is not a test of one's analytical skill, just to see how
+      many people do it the easier way.
+
+  37.
+
+      Consider an array of integers, both positive and negative. You have to
+      find out the maximum sum possible by adding 'n' consecutive integers in
+      the array, n <= [ARRAY_SIZE]. Also give where in the array this sequence
+        of n integers starts.
+
+  38.
+
+      Given two sorted linked lists, L1 and L2, write a C program to compute 
+      L1 /\ L2 (L1 intersection L2).
+
+  39.
+
+      Propose a data structure that supports the stack push and pop operations 
+      and a third operation find_min, which returns the smallest element in 
+      the data structure, all in O(1) worst case time.
+
+  40.
+
+      Given an array of integers (possibly some of the elements negative), 
+      write a C program to  find out the *maximum product* possible by adding 
+      'n' consecutive integers in the array, n <= ARRAY_SIZE. 
+
+      Also give where in the array this sequence  of n integers starts.
+
+  41.
+
+      A man has two cubes on his desk. Every day he arranges both cubes so that 
+      the front faces show the current day of the month. What numbers are on the 
+      faces of the cubes to allow this? 
+
+  42.
+
+      Given 6 match sticks of equal length. You are asked to form 4
+      equilateral triangles with these sticks. Obviously, you are not allowed
+      to break, split or bend the sticks.
+
+  43.
+
+      Say we have a data structure as follows:
+
+      enum {RED,BLUE,GREEN};
+      struct Ball
+      {
+              /*...*/
+              int color;
+      };
+
+      int ColorOfBall(Ball b)
+      {
+              return b.color;
+      }
+      Ball arr[SIZE];
+
+      The array arr consists of balls of with one of the three colours
+      (Red,Green,Blue). Now we need to sort the array in such a way that all
+      the Red coloured balls come first, followed by blue and then green.
+
+      The restriction is that call to function ColorOfBall is a very costly
+      operation. You have to use it as less as possible. (In other words we
+      would be looking for the solution with least number of calls to the
+      function ColorOfBall.)
+
+  44.
+
+      Propose a data structure for the following:
+      - The data structure would hold elements from 0 to N-1.
+        There is no order on the elements (no  ascending/descending order
+        requirement)
+
+      The complexity of the operations should be as follows:
+      * Initialization          - O(1)
+      * Insertion of an element - O(1)
+      * Deletion of an element  - O(1)
+      * Finding a element       - O(1)
+      * Deleting all elements   - O(1)
+
+  45.
+
+      Given 13 balls, how would you arrange them in 9 lines,  such
+      that there are 4 balls in each line ?
+
+      you can assume that the lines are arranged in 2-D space.  a ball
+      cannot be placed on top of another ball.
+
+      If you find that too easy, and have loads of time to kill, then
+      how about arranging 22 balls in 21 lines of 4 :)
+
+  46.
+
+      Write a "C" function,
+      int AddOvf(int* result, int a, int b)
+
+      If there is no overflow, the function places the reusltant 
+      sum a+b in "result" and returns 0. Otherwise it returns -1.
+
+      The solution of casting to long and adding to find detecting the 
+      overflow is not allowed :-)
+
+  47.
+
+      Write a C function that rotates to the right by 'n' bit 
+      positions the bits of an unsigned int x
+
+      No assumptions to be made on the the values 'n' can take and the
+      size of 'x'.
+
+
+  48.
+
+      A skier must decide every day she goes skiing whether to rent or buy skis,
+      unless or until she decides to buy them. The skier does not know how many
+      days she will go on skiing before she gets tired of this hobby.
+      Suggest a strategy for the skier minimizing her cost, given the cost of rent
+      is 1 unit, cost to buy the skis is B units where B>>1.
+
+  49.
+
+      Can you explain the behaviour of the following C program?
+      int main()
+      {
+              float f=0.0f;
+              int i;
+              for(i=0;i<10;i++)
+                      f += 0.1f;
+              if(f==1.0f)
+                      printf("f is 1.0f\n");
+              else
+                      printf("f is NOT 1.0f\n");
+
+              return 0;
+      }
+
+  50.
+
+      You need to write a simple macro CHAR(x) which takes a character x and
+      converts it into ASCII value of x.
+
+      printf("%c",CHAR(a)) ==> a
+      printf("%c",CHAR(X)) ==> X
+
+      No, this simple definition doesn't work:
+      #define CHAR(x) 'x'
+
+  51.
+
+      Here is a small one to drive away the afternoon siesta. Consider a point
+      P(n,n) in the cartesian co-ordinate system
+      A robot has to start from the origin and reach this point. The only steps
+      the robot can take are :
+      1 unit right
+      1 unit up.
+
+      How many different paths can the robot take to point P.
+      Is there an optimal path to point P. (both up and right steps incur the same
+      cost).
+
+  52.
+
+      How could i prevent a class from being used as a base
+      class in C++.
+
+      For example:
+      Consider some class ABC. I would like the user to create
+      objects of  class ABC but prevent him from deriving classes from ABC
+      and creating objects of the derived class.
+
+  53.
+
+      A multiple choice test has 15 questions and 4 choices for each answer.
+      Each question has only one answer correct.
+
+      How many ways can the 15 questions be answered so that
+      - Exactly 3 answers are correct
+      - Atleast 3 answers are correct
+
+  54.
+
+      cwd
+      xor ax, dx
+      sub ax, dx
+
+      cwd- convert word ot double word. sign extend DX:AX, with DX having the
+      signed bit
+      xor ax, dx => ax = ax xor dx
+      sub ax, dx => ax = ax - dx
+
+  55.
+
+      In a calendar year (assume non-leap), determine how many Friday the 
+      thirteenths there can be. What is the smallest number possible?
+
+  56.
+
+      Write a Recursive function which generates the PowerSet of a given Set.
+
+      The Set is passed to the Function as a String. And the Function should
+      print the Subsets as Strings.
+
+      [Note:]
+      PowerSet( {1,2,3} ) = 0, 1, 2, 3, 12, 13, 23, 123      //0 is Null Set.
+      And the Order of the SubSets is not Mandatory.
+
+      Sample TestCase:
+      I/P  :"abc"
+      O/P:
+      0
+      a
+      b
+      ab
+      c
+      ac
+      bc
+      abc
+
+  57.
+
+      Bangla numbers 
+      ====== =======
+      Bangla numbers normally use 'kuti' (10000000), 'lakh' (100000), 'hajar' (1000),
+      'shata' (100) while expanding and converting to text. You are going to write 
+      a program to convert a given number to text with them. 
+
+      Input
+      -----
+      The input file may contain several test cases. Each case will contain a 
+      non-negative number <= 999999999999999. 
+
+      Output
+      ------
+      For each case of input, you have to output a line starting with the 
+      case number with four digits adjustment followed by the converted text. 
+
+      Sample Input
+      ------ -----
+      23764
+      45897458973958
+
+      Sample Output
+      ------ ------
+         1. 23 hajar 7 shata 64
+         2. 45 lakh 89 hajar 7 shata 45 kuti 89 lakh 73 hajar 9 shata 58
+
+      http://acm.uva.es/p/v101/10101.html
+  58.
+
+      Suppose that there are 101 players entered in a "single elimination"
+      tennis tournament.
+
+      In such a tournament any player who loses a match, must drop out, and
+      every match ends in a victory for some player - there are no ties.
+
+      In each round of the tournament, the players remaining are matched into as
+      many pairs as possible, but if there is an odd number of players left,
+      someone receives a bye (which means an automatic vitory for this player
+      in this round) Enough rounds are played until a single player remains who
+      wins the tournament.
+
+      The problem is : How many matches are played in total?
+
+  59.
+
+      The "parity" of a number refers to whether it contains an odd or even
+      number of 1-bits. The number has "odd parity", if it contains odd number
+      of 1-bits and is "even parity", if it contains even number of 1-bits.
+
+      Write a C program to find the parity of an unsigned integer.
+
+  60.
+
+      Calculate:  B^P mod M for large values of B, P and M using a very
+      efficient algorithm.
+      Value ranges:
+
+      B   0-2147483647
+      P   0-2147483647
+      M   1-46340
+
+  61.
+
+      Lets assume we have a rat maze as represented by the following NxM matrix
+      where S is the start location and F is the end location.
+
+      S    0    0    0    0    0
+      1    1    0    0    0    0
+      1    0    1    0    0    0
+      1    0    1    0    0    0
+      0    1    0    1    0    0
+      1    0    0    0    1    0
+      0    1    1    1    1    F
+
+      The idea (as with any rat maze) is to traverse from S to F. The matrix can
+      have only 0 and 1 as values. 1 represents a path that can be taken and 0
+      represents a blocked path.
+
+      We can make the following assumption:
+      S will always be (0,0) and F will always be (N,M).
+
+      As seen from above, there can be many paths from S to F.
+
+      How do we find the shortest (or longest) path from S to F without actually
+      traversing all the possible paths.
+
+      Please post (with proof/explantion) your algorithms. Also can you then think
+      of ways to optimize the algo?
+
+  62.
+
+        I. The chicken came first.
+       II. The egg came first.
+      III. Statement I is false and Statement II is true.
+
+      If two of the above statements are false, what chance is there that the egg
+      came first?
+
+  63.
+
+      #include 
+      main()
+      {
+      int a,b,c;
+      int count = 1;
+      for (b=c=10;a="- FIGURE?, UMKC,XYZHello Folks,\
+      TFy!QJu ROo TNn(ROo)SLq SLq ULo+\
+      UHs UJq TNn*RPn/QPbEWS_JSWQAIJO^\
+      NBELPeHBFHT}TnALVlBLOFAkHFOuFETp\
+      HCStHAUFAgcEAelclcn^r^r\\tZvYxXy\
+      T|S~Pn SPm SOn TNn ULo0ULo#ULo-W\
+      Hq!WFs XDt!" [b+++21]; )
+      for(; a-- > 64 ; )
+      putchar ( ++c=='Z' ? c = c/ 9:33^b&1);
+      return 0;
+      }
+      The above program, when run gives the following output:
+
+                          !!!!!!
+                           !!!!!!!!!!
+                            !!!!!!!!!!!!!!!
+                              !!!!!!!!!!!!!!
+                            !!!!!!!!!!!!!!!
+                             !!!!!!!!!!!!
+                             !!!!!!!!!!!!
+                               !!!!!!!!!!!!
+                               !!!!!!!!
+                               !!!!!!!!!!
+                              !!!!!!!!!!!!!!
+                            !!!!!!!!!!!!!!!!
+                           !!!!!!!!!!!!!!!!                                  !!!!!
+                         !!!!!!!!!!!!!!!!!!!                               !!!!!!!!!!
+                        !!!!!!!!!!!!!!!!!!!!!!!                 !         !!!!!!!!!!
+                   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!              !!     !!!!!!!!!!!!
+                  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        !!      !!!!!!!!
+                   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!
+                     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  !!!!!!!!!!!!
+              !!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        !!!!!!
+             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      !!!!!
+                 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        !!!
+               !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!        !
+                 !!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  !!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                         !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                         !!!!!!!!!!!!!!!!!!!!!!!!!!
+                         !!!!!!!!!!!!!!!!!!!!!!!!!
+                          !!!!!!!!!!!!!!!!!!!!!!!!
+                           !!!!!!!!!!!!!!!!!!!!
+                           !!!!!!!!!!!!!!!!!!!
+                            !!!!!!!!!!!!!!!!
+                             !!!!!!!!!!!!!!!!
+                             !!!!!!!!!!!!!!!
+                              !!!!!!!!!!!!!!
+                               !!!!!!!!!!!!
+                               !!!!!!!!!!!!
+                               !!!!!!!!!!!!
+                                 !!!!!!!!
+                                 !!!!!!
+                                  !!!!
+
+
+      Can you figure out the logic used in the program?
+
+  64.
+
+      Here is an interesting sequence..
+      1 20 33 400 505 660 777 8000 9009 10100 11121
+      What are the next few numbers in the above sequence?
+
+  65.
+
+      You are travelling in the jungles of Africa, when you are caught by a
+      tribe of barbarians. They allow you to choose between death or solving
+      their great challenge. You know what you will choose ;)
+
+      You are blindfolded and taken to a room, where you are asked to kneel.
+      You feel hundreds of circular discs lying in front of you. You are told
+      that one side of each disc is painted red, and the other, green. There
+      are exactly 129 discs that currently are red side up. You have to
+      divide the discs into two groups, such that each group has the same
+      number of discs showing the red colour. Obviously, no peeking allowed.
+
+  66.
+
+      Given an array of strings, you need to sort it using "qsort"
+      function provided by C. You can use the "strcmp" function provided
+      by the C language as well.
+
+      #define SIZEOF(arr) (sizeof(arr)/sizeof(arr[0]))
+      int main()
+      {
+              char *arr[]={"abc","def","abcd"};
+              int i;
+
+              /*
+              * code to sort..
+              *...
+              *...
+              */
+
+              for(i=0;i < SIZEOF(arr);i++)
+                      printf("%s\n",arr[i]);
+      }
+
+  67.
+
+      Here is a game one can buy in most toy stores. 
+      It's called Hi-Q (or Brainvita). 
+      32 pieces are arranged on a board as shown below:
+
+               X   X   X
+       
+               X   X   X 
+
+       X   X   X   X   X   X   X
+
+       X   X   X   o   X   X   X
+
+       X   X   X   X   X   X   X
+
+               X   X   X
+
+               X   X   X
+
+
+      * Only the centre position is unoccupied. 
+      * A piece is allowed to move by jumping over one of it's neighbours into 
+        an empty space. 
+      * Diagonal jumps are not permitted. 
+      * When a piece is jumped over, it is removed from the board. 
+
+      Write an algorithm which determines a series of jumps so that all of the 
+      pieces except one are eventually removed, and the final piece ends
+      up at the center position.
+
+  68.
+
+      Suppose we wish to multiply four matrices of real numbers 
+      M1 x M2 x M3 x M4 where 
+
+      M1 is 10 by 20, 
+      M2 is 20 by 50, 
+      M3 is 50 by 1, and 
+      M4 is 1 by 100. 
+
+      Assume that the multiplication of a p x q matrix by a q x r matrix 
+      requires pqr scalar operations, as it does in the usual matrix multiplication 
+      algorithm. 
+
+      Find the optimal order in which to multiply the matrices so as 
+      to minimize the total number of scalar operations. 
+
+      How would you find this optimal ordering if there are an 
+      arbitrary number of matrices?
+
+  69.
+
+      Describe a (n log2 n) time algorithm that, given a set S of n real numbers
+      and another real number x, determines whether or not there exist two
+      elements in S whose sum is exactly x.
+
+  70.
+
+      Given an array of n numbers a[1], a[2],..., a[n], find the
+      second minimum number in n + log n comparisons. You can only
+      compare elements. You can't assume anything about the range of values
+      of the numbers.
+
+  71.
+
+      An element in a sorted array can be found in O(log n) time via binary
+      search. But suppose I rotate the sorted array at some pivot unknown to you
+      beforehand. So for instance, 1 2 3 4 5 might become 3 4 5 1 2. Now devise
+      a way to find an element in the rotated array in O(log n) time.
+
+  72.
+
+      Write a program that will display a "spiral" of NxN numbers, using 
+      constant space (no arrays allowed). For example, here's what the spiral 
+      looks like for N=10:
+
+      	99    98    97    96    95    94    93    92    91    90
+      	64    63    62    61    60    59    58    57    56    89
+      	65    36    35    34    33    32    31    30    55    88
+      	66    37    16    15    14    13    12    29    54    87
+      	67    38    17     4     3     2    11    28    53    86
+      	68    39    18     5     0     1    10    27    52    85
+      	69    40    19     6     7     8     9    26    51    84
+      	70    41    20    21    22    23    24    25    50    83
+      	71    42    43    44    45    46    47    48    49    82
+      	72    73    74    75    76    77    78    79    80    81
+
+
+      For N = 2
+       3 2
+       0 1 
+
+      For N=3
+        8 7 6
+        1 0 5
+        2 3 4 
+
+      For N=4
+        15 14 13 12
+         4  3  2 11
+         5  0  1 10
+         6  7  8  9
+
+  73.
+
+      How do u find the largest repeating string and the number of times it
+      repeats in a given string efficiently offcourse !?
+
+      ex :
+      String : "abc fghi bc kl abcd lkm abcdefg"
+      Ans    : "abcd"  count = 2
+
+  74.
+
+      There are 4 buckets of coins. Real coins weigh one gram each. fake grams 
+      weigh 2 grams each. Each bucket is fake (contains only fake coins) or real 
+      (contains only real coins). You have weighing machine, which can be used 
+      only one weighing. If there are 9 coins per bucket, how can you determine 
+      all the buckets that are fake with just one weighing.
+
+  75.
+
+      Given a binary tree, you need to verify it is a binary search tree or not.
+      How do you do that?
+
+  76.
+
+      Write a C function, which takes a number n and positions p1 and p2 and
+      returns if the the bits at positions p1 and p2 are same or not.
+
+  77.
+
+      Write a C function, which takes two numbers m and n, (which are representing
+      and bit set) and checks whether m is a subset of n or not.
+
+  78.
+
+      A majority element in an array A, of size N is an element that appears more than N/2 times (and hence there is atmost
+      one such element)
+
+      Write a function which takes an array and emits the majority element (if it exists), otherwise prints NONE as follows:
+
+       I/P : 3 3 4 2 4 4 2 4 4
+       O/P : 4
+
+       I/P : 3 3 4 2 4 4 2 4
+       O/P : NONE
+
+  79.
+

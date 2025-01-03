@@ -1,0 +1,19 @@
+# Boot Sequence
+
+-> Power button 
+-> Motherboard to Power Supply 
+-> Power Good Signal
+-> Motherboard starts the CPU [real mode] 20 bit addr line
+-> Registers are init with default values
+-> JMP to BIOS 
+-> BIOS to Bootloader 
+-> Bootloader loads the Kernel 
+-> Kernel to Protected mode from real mode [32-bit mode]
+-> Kernel initializes memory [bss, stack], video etcs
+-> Kernel to Long Mode (64-bit)
+-> Kernel decompression into random address
+
+
+
+real mode/ memory segmentation 
+

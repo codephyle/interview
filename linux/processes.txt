@@ -1,0 +1,15 @@
+ getpid()
+
+ fork() -> execl() -> waitpid()
+
+ execl() - takes the args as list
+ execv() - takes args as vector
+ execle() - to pass env variables
+ execlp() - duping the executable search using $PATH
+
+
+ulimit() -> limits for the user, for ex max number of file descriptors
+
+extern int errno; /* thrreads will needed to use a different function for errno setting */
+strerror(int) 
+

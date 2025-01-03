@@ -1,0 +1,1 @@
+86400 secs in a day. app. 100K secs
